@@ -9,20 +9,21 @@ export default function Button({
   children,
   variant = "primary",
 }: ButtonProps) {
-  const baseClasses =
-    "inline-flex items-center justify-center rounded-full px-7 py-3 text-sm font-medium transition-all duration-300 ease-out";
+  const base =
+    "inline-flex items-center gap-2 rounded-full px-8 py-4 text-sm font-medium transition-all duration-300 ease-out";
 
-  const variants = {
+  const styles = {
     primary:
-      "bg-[var(--color-primary)] text-white hover:scale-105 hover:shadow-lg",
+      "bg-[var(--color-primary)] text-white shadow-lg shadow-blue-200 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl",
 
     secondary:
-      "border border-[var(--color-primary)] text-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white",
+      "border border-neutral-300 bg-white/60 backdrop-blur-md hover:bg-white hover:-translate-y-1",
   };
 
   return (
-    <button className={`${baseClasses} ${variants[variant]}`}>
+    <button className={`${base} ${styles[variant]}`}>
       {children}
+      <span>→</span>
     </button>
   );
 }
