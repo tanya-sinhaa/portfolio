@@ -61,3 +61,10 @@ h5,
 h6 {
   font-family: var(--font-heading);
 }
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
