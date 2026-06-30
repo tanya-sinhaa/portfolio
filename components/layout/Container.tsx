@@ -15,9 +15,9 @@ export default function Container({
         mx-auto
         w-full
         max-w-[1280px]
-        px-6
-        lg:px-8
-        xl:px-10
+        px-8
+        lg:px-12
+        xl:px-16
         ${className}
       `}
     >

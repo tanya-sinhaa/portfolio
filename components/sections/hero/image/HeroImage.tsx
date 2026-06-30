@@ -1,4 +1,5 @@
 import Image from "next/image";
+import FloatingBadge from "./FloatingBadge";
 
 export default function HeroImage() {
   return (
@@ -11,7 +12,7 @@ export default function HeroImage() {
           h-[520px]
           w-[520px]
           rounded-full
-          bg-[#f3dfbf]
+          bg-[#f3dfbf] 
           opacity-70
           blur-3xl
         "
@@ -34,19 +35,22 @@ export default function HeroImage() {
       <div className="relative z-10">
 
         <Image
-          src="/images/hero/illustration.png"
+          src="/images/hero/illustration1.png"
           alt="Tanya Illustration"
-          width={560}
-          height={700}
+          width={760}
+          height={980}
           priority
           className="
+            h-auto
+            w-full
+            max-w-[680px]
             select-none
             pointer-events-none
-          "
+            drop-shadow-2xl
+            "
         />
-
       </div>
-
+      <FloatingBadge />
     </div>
   );
-}
+} 
