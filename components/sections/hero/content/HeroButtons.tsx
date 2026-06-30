@@ -1,14 +1,15 @@
 import Button from "@/components/ui/Button";
+import { heroData } from "@/data/hero";
 
 export default function HeroButtons() {
   return (
-    <div className="mt-10 flex flex-wrap gap-4">
+    <div className="flex flex-wrap gap-4">
       <Button>
-        Explore My Work
+        {heroData.primaryButton.text}
       </Button>
 
       <Button variant="secondary">
-        Download Resume
+        {heroData.secondaryButton.text}
       </Button>
     </div>
   );

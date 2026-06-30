@@ -1,23 +1,32 @@
 export const heroData = {
-  greeting: "HI, I'M",
+  greeting: "FULL STACK ENGINEER",
 
   firstName: "Tanya",
 
   lastName: "Sinha",
 
-  title: "Full Stack Developer • AI Enthusiast • Problem Solver",
+  title: "AI Engineer • Full Stack Developer",
 
   description:
-    "I build scalable web applications and explore AI to create solutions that are not just functional, but meaningful.",
+    "Building intelligent software with AI, scalable backend systems, and thoughtful digital experiences. Passionate about solving real-world problems through modern web technologies and machine learning.",
 
-  buttons: {
-    primary: "View My Work",
-    secondary: "Download Resume",
+  primaryButton: {
+    text: "Explore Projects",
+    href: "#projects",
   },
 
-  socials: [
-    "LinkedIn",
-    "GitHub",
-    "Email",
-  ],
+  secondaryButton: {
+    text: "Download Resume",
+    href: "/resume.pdf",
+  },
+
+  socials: {
+    github: "https://github.com/tanya-sinhaa",
+
+    linkedin: "https://linkedin.com/in/tanya-sinha-1653b42b1/",  
+
+    email: "mailto:12hellotanya@gmail.com",
+
+    leetcode: "https://leetcode.com/",
+  },
 };
