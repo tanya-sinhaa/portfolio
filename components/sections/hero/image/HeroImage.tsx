@@ -1,43 +1,50 @@
+import Image from "next/image";
+
 export default function HeroImage() {
   return (
     <div className="relative flex items-center justify-center">
 
-      {/* Glow */}
+      {/* Background Glow */}
       <div
         className="
           absolute
           h-[520px]
           w-[520px]
           rounded-full
-          bg-[var(--color-surface)]
+          bg-[#f3dfbf]
+          opacity-70
           blur-3xl
         "
       />
 
-      {/* Portrait Card */}
+      {/* Brush Circle */}
       <div
         className="
-          relative
-          z-10
-          h-[580px]
-          w-[430px]
-          rounded-[36px]
-          border
-          border-neutral-200
-          bg-white
-          shadow-xl
-          transition-transform
-          duration-300
-          hover:-translate-y-2
+          absolute
+          h-[470px]
+          w-[470px]
+          rounded-full
+          border-[18px]
+          border-[#ead7b8]
+          opacity-50
         "
-      >
-        <div className="flex h-full items-center justify-center">
+      />
 
-          <p className="text-neutral-400">
-            Your Illustration
-          </p>
+      {/* Illustration */}
+      <div className="relative z-10">
 
-        </div>
+        <Image
+          src="/images/hero/illustration.png"
+          alt="Tanya Illustration"
+          width={560}
+          height={700}
+          priority
+          className="
+            select-none
+            pointer-events-none
+          "
+        />
+
       </div>
 
     </div>
